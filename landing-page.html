@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualization – Homework 4</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v4.js"></script>
+    <script src="https://d3js.org/topojson.v3.js"></script>
+
+    <script src="js/bar-chart.js"></script>
+    <script src="js/bar-cdc-chart.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/map-cdc.js"></script>
+    <script src="js/utah.js"></script>
+    <script src="js/utah_mortality.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Impact of Hospitals on Health Outcomes</h1>
+        <p>Name: Divyanshu Tripathy; E-Mail: u1256422@umail.utah.edu; UID: u1256422</p>
+    </div>
+
+    <div id="bls">
+        <svg id="bar-chart">
+            <g id="x-axis"></g>
+            <g id="y-axis"></g>
+            <g id="bars"></g>
+            <g id="overlay"><line></line></g>
+        </svg>
+        <svg id="bar-chart-cdc">
+            <g id="x-axis-cdc"></g>
+            <g id="y-axis-cdc"></g>
+            <g id="bars-cdc"></g>
+            <g id="overlay-cdc"><line></line></g>
+        </svg>
+    </div>
+    
+    <div id="map-div">
+        <svg id="map">
+            <g id="title"></g>
+            <g id="states"></g>
+        </svg>
+    </div>
+    <div id="map-cdc-div">
+        <svg id="map-cdc">
+            <g id="title-cdc"></g>
+            <g id="states-cdc"></g>
+        </svg>
+    </div>
+    <div id="utah-div">
+        <svg id="utah-svg">
+            <g id="utah-title"></g>
+            <g id="utah-state"></g>
+        </svg>
+        <svg id="utah-mortality-svg">
+            <g id="utah-mortality-title"></g>
+            <g id="utah-mortality-state"></g>
+        </svg>
+    </div>
+</body>
+
+</html>

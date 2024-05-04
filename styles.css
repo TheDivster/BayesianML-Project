@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* SVG and div styling */
+#content {
+    margin: auto;
+    width: 1550px;
+}
+
+#map {
+    width: 1200px;
+    height: 600px;
+}
+
+#map-cdc {
+    width: 1200px;
+    height: 600px;
+}
+
+#utah-svg {
+    width: 600px;
+    height: 600px;
+}
+
+#utah-mortality-svg {
+    width: 600px;
+    height: 600px;
+}
+
+#bar-chart {
+    width: 600px;
+    height: 600px;
+}
+
+#bar-chart-cdc {
+    width: 600px;
+    height: 600px;
+}
+
+#info-box {
+    margin: auto;
+    width: 400px;
+}
+
+div {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(128,128,128);
+}
+
+#county {
+    fill: #F8F0E3;
+}
+
+.header {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Vis specific classes */
+#states > .state.selected {
+    stroke-width: 2px;
+    stroke: black;
+    stroke-opacity: 1;
+}
+
+#states > .state {
+    stroke-width: 1px;
+    stroke: black;
+    stroke-opacity: 0.1;
+}
+
+#states-cdc > .state.selected.cdc {
+    stroke-width: 2px;
+    stroke: black;
+    stroke-opacity: 1;
+}
+
+#states-cdc > .state-cdc {
+    stroke-width: 1px;
+    stroke: black;
+    stroke-opacity: 0.1;
+}
